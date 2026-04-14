@@ -7,9 +7,9 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  title: "Alaa Luxury Parfumes | Extrait de Parfum",
-  description: "Discover the art of luxury fragrance. Alaa Luxury Parfumes creates exquisite extraits de parfum using the world's finest ingredients. Experience scents that define elegance and sophistication.",
-  language: "en",
+  title: "Alaa Parfums de Luxe | Extrait de Parfum",
+  description: "Découvrez l'art du parfum de luxe. Alaa Parfums de Luxe crée des extraits de parfum exquis en utilisant les meilleures ingrédients du monde. Expérimentez des scents qui définissent l'élégance et la sophistication.",
+  language: "fr",
 };
 
 // ─── Navigation ──────────────────────────────────────────────────────────────
@@ -38,11 +38,11 @@ export interface NavigationConfig {
 }
 
 export const navigationConfig: NavigationConfig = {
-  brandName: "Alaa Luxury Parfumes",
+  brandName: "Alaa Parfums de Luxe",
   logoImage: "/images/logo.png",
   menuLinks: [
     { label: "Collections", href: "#products" },
-    { label: "Our Story", href: "#about" },
+    { label: "Notre Histoire", href: "#about" },
     { label: "Journal", href: "#blog" },
     { label: "Contact", href: "#contact" },
   ],
@@ -51,10 +51,10 @@ export const navigationConfig: NavigationConfig = {
     { icon: "Facebook", label: "Facebook", href: "https://facebook.com" },
     { icon: "Twitter", label: "Twitter", href: "https://twitter.com" },
   ],
-  searchPlaceholder: "Search fragrances...",
-  cartEmptyText: "Your cart is empty",
-  cartCheckoutText: "Proceed to Checkout",
-  continueShoppingText: "Continue Shopping",
+  searchPlaceholder: "Rechercher des parfums...",
+  cartEmptyText: "Votre panier est vide",
+  cartCheckoutText: "Procéder au paiement",
+  continueShoppingText: "Continuer les achats",
   menuBackgroundImage: "/images/hero-bg.jpg",
 };
 
@@ -72,12 +72,12 @@ export interface HeroConfig {
 
 export const heroConfig: HeroConfig = {
   tagline: "EXTRAIT DE PARFUM",
-  title: "The Art of\nLuxury Fragrance",
-  ctaPrimaryText: "Explore Collection",
+  title: "L'Art du\nParfum de Luxe",
+  ctaPrimaryText: "Explorer la Collection",
   ctaPrimaryTarget: "#products",
-  ctaSecondaryText: "Our Story",
+  ctaSecondaryText: "Notre Histoire",
   ctaSecondaryTarget: "#about",
-  backgroundImage: "/images/hero-bg.jpg",
+  backgroundImage: "/images/hero.png",
 };
 
 // ─── SubHero ─────────────────────────────────────────────────────────────────
@@ -100,21 +100,21 @@ export interface SubHeroConfig {
 }
 
 export const subHeroConfig: SubHeroConfig = {
-  tag: "OUR PHILOSOPHY",
-  heading: "Crafted with Passion,\nWorn with Distinction",
+  tag: "NOTRE PHILOSOPHIE",
+  heading: "Créé avec Passion,\nPorté avec Distinction",
   bodyParagraphs: [
-    "At Alaa Luxury Parfumes, we believe that fragrance is more than a scent—it is an expression of identity, a signature that lingers in memory long after you have departed.",
-    "Each of our extraits de parfum is meticulously crafted using the world's most precious ingredients, sourced from the farthest corners of the globe. From the rarest ouds of Southeast Asia to the finest roses of Grasse, every element is chosen with uncompromising standards.",
-    "Our master perfumers spend years perfecting each composition, ensuring that every drop tells a story of elegance, sophistication, and timeless luxury."
+    "Chez Alaa Parfums de Luxe, nous croyons que le parfum est plus qu'une senteur - c'est une expression de l'identité, une signature qui persiste dans la mémoire longtemps après votre départ.",
+    "Chacun de nos extraits de parfum est minutieusement créé en utilisant les ingrédients les plus précieux du monde, provenant des coins les plus éloignés du globe. Des oud les plus rares d'Asie du Sud-Est aux plus belles roses de Grasse, chaque élément est choisi selon les normes les plus exigeantes.",
+    "Nos maîtres parfumeurs passent des années à perfectionner chaque composition, s'assurant que chaque goutte raconte une histoire d'élégance, de sophistication et de luxe intemporel."
   ],
-  linkText: "Discover Our Craft",
+  linkText: "Découvrir Notre Savoir-Faire",
   linkTarget: "#about",
   image1: "/images/subhero-1.jpg",
   image2: "/images/subhero-2.jpg",
   stats: [
-    { value: 25, suffix: "+", label: "Years of Excellence" },
-    { value: 100, suffix: "%", label: "Natural Ingredients" },
-    { value: 12, suffix: "", label: "Master Perfumers" },
+    { value: 25, suffix: "+", label: "Ans d'Excellence" },
+    { value: 100, suffix: "%", label: "Ingrédients Naturels" },
+    { value: 12, suffix: "", label: "Maîtres Parfumeurs" },
   ],
 };
 
@@ -130,13 +130,13 @@ export interface VideoSectionConfig {
 }
 
 export const videoSectionConfig: VideoSectionConfig = {
-  tag: "THE COLLECTION",
-  heading: "Where Tradition\nMeets Innovation",
+  tag: "LA COLLECTION",
+  heading: "Là où la Tradition\nRencontre l'Innovation",
   bodyParagraphs: [
-    "Our collection represents the pinnacle of perfumery artistry. Each fragrance is an extrait de parfum—the most concentrated and luxurious form of fragrance, containing up to 40% pure perfume oils.",
-    "This exceptional concentration ensures that our scents evolve beautifully throughout the day, revealing new layers of complexity with every hour that passes. From the first spritz to the final whisper, experience a journey of olfactory excellence."
+    "Notre collection représente l'apogée de l'art de la parfumerie. Chaque parfum est un extrait de parfum - la forme la plus concentrée et luxueuse de parfum, contenant jusqu'à 40% d'huiles de parfum pures.",
+    "Cette concentration exceptionnelle garantit que nos senteurs évoluent magnifiquement tout au long de la journée, révélant de nouvelles couches de complexité à chaque heure qui passe. De la première pulvérisation au dernier murmure, vivez un voyage d'excellence olfactive."
   ],
-  ctaText: "View All Fragrances",
+  ctaText: "Voir Tous les Parfums",
   ctaTarget: "#products",
   backgroundImage: "/images/about-1.jpg",
 };
@@ -167,13 +167,13 @@ export interface ProductsConfig {
 }
 
 export const productsConfig: ProductsConfig = {
-  tag: "THE COLLECTION",
-  heading: "Signature Fragrances",
-  description: "Discover our curated collection of extraits de parfum, each a masterpiece of olfactory artistry crafted with the world's finest ingredients.",
-  viewAllText: "View Full Collection",
-  addToCartText: "Add to Cart",
-  addedToCartText: "Added to Cart",
-  categories: ["All", "Oriental", "Floral", "Woody", "Fresh"],
+  tag: "LA COLLECTION",
+  heading: "Parfums Signature",
+  description: "Découvrez notre collection sélectionnée d'extraits de parfum, chacun un chef-d'œuvre de l'art olfactif créé avec les meilleures ingrédients du monde.",
+  viewAllText: "Voir la Collection Complète",
+  addToCartText: "Ajouter au Panier",
+  addedToCartText: "Ajouté au Panier",
+  categories: ["Tous", "Oriental", "Floral", "Boisé", "Frais"],
   products: [
     {
       id: 1,
@@ -181,10 +181,10 @@ export const productsConfig: ProductsConfig = {
       price: 485,
       category: "Oriental",
       image: "/images/perfume-1.jpg",
-      description: "A captivating blend of rare oud and golden amber, wrapped in velvet vanilla.",
-      topNotes: ["Saffron", "Bergamot", "Pink Pepper"],
-      heartNotes: ["Oud Wood", "Rose de Mai", "Jasmine"],
-      baseNotes: ["Amber", "Vanilla", "Sandalwood"],
+      description: "Un mélange captivant d'oud rare et d'ambre doré, enveloppé dans de la vanille veloutée.",
+      topNotes: ["Safran", "Bergamote", "Poivre Rose"],
+      heartNotes: ["Bois d'Oud", "Rose de Mai", "Jasmin"],
+      baseNotes: ["Ambre", "Vanille", "Bois de Santal"],
     },
     {
       id: 2,
@@ -192,32 +192,32 @@ export const productsConfig: ProductsConfig = {
       price: 420,
       category: "Floral",
       image: "/images/perfume-2.jpg",
-      description: "The essence of thousand roses at dawn, enriched with golden honey.",
-      topNotes: ["Bulgarian Rose", "Damask Rose", "Lychee"],
-      heartNotes: ["Peony", "Magnolia", "Honey"],
-      baseNotes: ["Musk", "Cashmere Wood", "White Amber"],
+      description: "L'essence de mille roses à l'aube, enrichie de miel doré.",
+      topNotes: ["Rose de Bulgarie", "Rose de Damas", "Litchi"],
+      heartNotes: ["Pivoine", "Magnolia", "Miel"],
+      baseNotes: ["Musc", "Bois de Cachemire", "Ambre Blanc"],
     },
     {
       id: 3,
       name: "Lumière Éternelle",
       price: 395,
-      category: "Fresh",
+      category: "Frais",
       image: "/images/perfume-3.jpg",
-      description: "Eternal light captured in a bottle—citrus brilliance meets white florals.",
-      topNotes: ["Italian Lemon", "Bergamot", "Neroli"],
-      heartNotes: ["Orange Blossom", "Tuberose", "Ylang-Ylang"],
-      baseNotes: ["White Musk", "Cedarwood", "Vetiver"],
+      description: "La lumière éternelle capturée dans une bouteille - la brillance des agrumes rencontre les fleurs blanches.",
+      topNotes: ["Citron d'Italie", "Bergamote", "Néroli"],
+      heartNotes: ["Fleur d'Oranger", "Tuberose", "Ylang-Ylang"],
+      baseNotes: ["Musc Blanc", "Bois de Cèdre", "Vétiver"],
     },
     {
       id: 4,
       name: "Bois Précieux",
       price: 450,
-      category: "Woody",
+      category: "Boisé",
       image: "/images/perfume-4.jpg",
-      description: "Precious woods from ancient forests, distilled into liquid elegance.",
-      topNotes: ["Cedar Leaf", "Black Pepper", "Cardamom"],
-      heartNotes: ["Sandalwood", "Patchouli", "Violet Leaf"],
-      baseNotes: ["Agarwood", "Tonka Bean", "Labdanum"],
+      description: "Les bois précieux des forêts anciennes, distillés en élégance liquide.",
+      topNotes: ["Feuille de Cèdre", "Poivre Noir", "Cardamome"],
+      heartNotes: ["Bois de Santal", "Patchouli", "Feuille de Violette"],
+      baseNotes: ["Bois d'Agar", "Fève Tonka", "Labdanum"],
     },
     {
       id: 5,
@@ -225,10 +225,10 @@ export const productsConfig: ProductsConfig = {
       price: 520,
       category: "Oriental",
       image: "/images/perfume-5.jpg",
-      description: "Imperial velvet—luxurious iris and precious resins in perfect harmony.",
-      topNotes: ["Iris Butter", "Almond", "Bergamot"],
-      heartNotes: ["Tonka Bean", "Benzoin", "Heliotrope"],
-      baseNotes: ["Ambergris", "Musk", "Leather"],
+      description: "Velours impérial - iris luxueux et résines précieuses en parfaite harmonie.",
+      topNotes: ["Beurre d'Iris", "Amande", "Bergamote"],
+      heartNotes: ["Fève Tonka", "Benjoin", "Héliotrope"],
+      baseNotes: ["Ambergris", "Musc", "Cuir"],
     },
     {
       id: 6,
@@ -236,10 +236,10 @@ export const productsConfig: ProductsConfig = {
       price: 580,
       category: "Oriental",
       image: "/images/perfume-6.jpg",
-      description: "Supreme reign—an opulent masterpiece of rare ingredients.",
-      topNotes: ["Truffle", "Ylang-Ylang", "Black Currant"],
-      heartNotes: ["Orchid", "Lotus Wood", "Spices"],
-      baseNotes: ["Patchouli", "Incense", "Madagascar Vanilla"],
+      description: "Règne suprême - un chef-d'œuvre opulent d'ingrédients rares.",
+      topNotes: ["Truffe", "Ylang-Ylang", "Cassis"],
+      heartNotes: ["Orchidée", "Bois de Lotus", "Épices"],
+      baseNotes: ["Patchouli", "Encens", "Vanille de Madagascar"],
     },
   ],
 };
@@ -260,23 +260,23 @@ export const featuresConfig: FeaturesConfig = {
   features: [
     {
       icon: "Leaf",
-      title: "Pure Ingredients",
-      description: "100% natural and sustainably sourced ingredients from around the world.",
+      title: "Ingrédients Purs",
+      description: "100% d'ingrédients naturels et durables provenant du monde entier.",
     },
     {
       icon: "Sparkles",
-      title: "Extrait Concentration",
-      description: "Up to 40% pure perfume oils for exceptional longevity and sillage.",
+      title: "Concentration d'Extrait",
+      description: "Jusqu'à 40% d'huiles de parfum pures pour une tenue et une diffusion exceptionnelles.",
     },
     {
       icon: "Truck",
-      title: "Complimentary Shipping",
-      description: "Free worldwide delivery on all orders over $300.",
+      title: "Livraison Gratuite",
+      description: "Livraison gratuite dans le monde entier pour toutes les commandes supérieures à 300€.",
     },
     {
       icon: "Gift",
-      title: "Luxury Gifting",
-      description: "Elegant packaging with personalized engraving available.",
+      title: "Cadeaux de Luxe",
+      description: "Emballage élégant avec gravure personnalisée disponible.",
     },
   ],
 };
@@ -301,30 +301,30 @@ export interface BlogConfig {
 
 export const blogConfig: BlogConfig = {
   tag: "JOURNAL",
-  heading: "The Art of Fragrance",
-  viewAllText: "View All Articles",
-  readMoreText: "Read More",
+  heading: "L'Art du Parfum",
+  viewAllText: "Voir Tous les Articles",
+  readMoreText: "Lire la Suite",
   posts: [
     {
       id: 1,
-      title: "The Art of Layering Fragrances",
-      date: "December 15, 2024",
+      title: "L'Art de Superposer les Parfums",
+      date: "15 décembre 2024",
       image: "/images/blog-1.jpg",
-      excerpt: "Discover the secrets of creating your unique signature scent by masterfully combining different fragrances.",
+      excerpt: "Découvrez les secrets de la création de votre signature olfactive unique en combinant magistralement différents parfums.",
     },
     {
       id: 2,
-      title: "Understanding Oud: Liquid Gold",
-      date: "December 8, 2024",
+      title: "Comprendre l'Oud : L'Or Liquide",
+      date: "8 décembre 2024",
       image: "/images/blog-2.jpg",
-      excerpt: "Explore the fascinating world of oud, one of the most precious and coveted ingredients in perfumery.",
+      excerpt: "Explorez le monde fascinant de l'oud, l'un des ingrédients les plus précieux et les plus convoités en parfumerie.",
     },
     {
       id: 3,
-      title: "The Perfect Gift: A Guide",
-      date: "November 28, 2024",
+      title: "Le Cadeau Parfait : Un Guide",
+      date: "28 novembre 2024",
       image: "/images/blog-3.jpg",
-      excerpt: "How to choose the ideal fragrance gift for your loved ones, from selection to presentation.",
+      excerpt: "Comment choisir le parfum idéal à offrir à vos proches, de la sélection à la présentation.",
     },
   ],
 };
@@ -347,34 +347,34 @@ export interface FaqConfig {
 
 export const faqConfig: FaqConfig = {
   tag: "SUPPORT",
-  heading: "Frequently Asked Questions",
-  ctaText: "Contact Our Concierge",
+  heading: "Questions Fréquemment Posées",
+  ctaText: "Contacter Notre Concierge",
   ctaTarget: "#contact",
   faqs: [
     {
       id: 1,
-      question: "What is an Extrait de Parfum?",
-      answer: "An Extrait de Parfum is the most concentrated form of fragrance, containing between 20-40% pure perfume oils. This high concentration ensures exceptional longevity, typically lasting 8-12 hours or more on the skin, and creates a more intimate, luxurious scent experience.",
+      question: "Qu'est-ce qu'un Extrait de Parfum ?",
+      answer: "Un Extrait de Parfum est la forme la plus concentrée de parfum, contenant entre 20-40% d'huiles de parfum pures. Cette concentration élevée assure une tenue exceptionnelle, de 8 à 12 heures ou plus sur la peau, et crée une expérience olfactive plus intime et luxueuse.",
     },
     {
       id: 2,
-      question: "How should I store my fragrance?",
-      answer: "To preserve the integrity of your fragrance, store it in a cool, dark place away from direct sunlight and temperature fluctuations. Avoid storing in bathrooms due to humidity. Properly stored, your extrait de parfum will maintain its quality for many years.",
+      question: "Comment devrais-je conserver mon parfum ?",
+      answer: "Pour préserver l'intégrité de votre parfum, conservez-le dans un endroit frais et sombre, à l'abri de la lumière directe du soleil et des fluctuations de température. Évitez de stocker dans des salles de bain en raison de l'humidité. Correctement conservé, votre extrait de parfum conservera sa qualité pendant de nombreuses années.",
     },
     {
       id: 3,
-      question: "Do you offer sample sizes?",
-      answer: "Yes, we offer 5ml discovery samples of our entire collection. Sample sets are also available, curated by our perfumers to help you explore different fragrance families and find your perfect match.",
+      question: "Proposez-vous des formats échantillon ?",
+      answer: "Oui, nous proposons des échantillons de découverte de 5ml de toute notre collection. Des ensembles d'échantillons sont également disponibles, sélectionnés par nos parfumeurs pour vous aider à explorer différentes familles olfactives et trouver votre parfum parfait.",
     },
     {
       id: 4,
-      question: "What is your return policy?",
-      answer: "We offer a 30-day satisfaction guarantee on all unopened products. For opened fragrances, we provide exchanges within 14 days if the scent does not suit you. Please contact our customer concierge for assistance with returns.",
+      question: "Quelle est votre politique de retour ?",
+      answer: "Nous offrons une garantie de satisfaction de 30 jours sur tous les produits non ouverts. Pour les parfums ouverts, nous proposons des échanges dans les 14 jours si la senteur ne vous convient pas. Veuillez contacter notre concierge client pour l'assistance avec les retours.",
     },
     {
       id: 5,
-      question: "Do you provide personalized engraving?",
-      answer: "Yes, we offer complimentary engraving on all 100ml bottles. You can personalize your fragrance with up to 15 characters, making it the perfect gift for special occasions. Engraving is available at checkout.",
+      question: "Proposez-vous une gravure personnalisée ?",
+      answer: "Oui, nous offrons une gravure gratuite sur tous les flacons de 100ml. Vous pouvez personnaliser votre parfum avec jusqu'à 15 caractères, ce qui en fait le cadeau parfait pour les occasions spéciales. La gravure est disponible à la caisse.",
     },
   ],
 };
@@ -399,11 +399,11 @@ export interface AboutConfig {
 export const aboutConfig: AboutConfig = {
   sections: [
     {
-      tag: "HERITAGE",
-      heading: "A Legacy of Excellence",
+      tag: "HÉRITAGE",
+      heading: "Un Héritage d'Excellence",
       paragraphs: [
-        "Founded in 1999, Alaa Luxury Parfumes began with a singular vision: to create fragrances that transcend time and trends. Our journey started in the heart of Grasse, France—the world's perfume capital—where our founder trained under master perfumers who had perfected their craft over generations.",
-        "Today, we continue this tradition of excellence, combining time-honored techniques with innovative approaches to create scents that are both classic and contemporary."
+        "Fondée en 1999, Alaa Parfums de Luxe a commencé avec une vision unique : créer des parfums qui transcendent le temps et les tendances. Notre voyage a commencé au cœur de Grasse, en France - la capitale mondiale du parfum - où notre fondatrice s'est formée auprès de maîtres parfumeurs qui avaient perfectionné leur art au fil des générations.",
+        "Aujourd'hui, nous continuons cette tradition d'excellence, combinant les techniques intemporelles avec des approches innovantes pour créer des senteurs qui sont à la fois classiques et contemporaines."
       ],
       quote: "",
       attribution: "",
@@ -412,11 +412,11 @@ export const aboutConfig: AboutConfig = {
       textColor: "#FFFFFF",
     },
     {
-      tag: "CRAFTSMANSHIP",
-      heading: "The Master Perfumer's Touch",
+      tag: "SAVOIR-FAIRE",
+      heading: "La Touche du Maître Parfumeur",
       paragraphs: [],
-      quote: "A fragrance should tell a story—of places visited, memories cherished, and dreams yet to be realized. Each bottle we create is a chapter in that story.",
-      attribution: "— Jean-Pierre Alaa, Founder",
+      quote: "Un parfum devrait raconter une histoire - des lieux visités, des souvenirs chéris et des rêves à réaliser. Chaque bouteille que nous créons est un chapitre de cette histoire.",
+      attribution: "— Jean-Pierre Alaa, Fondateur",
       image: "/images/about-2.jpg",
       backgroundColor: "#0a0a0a",
       textColor: "#FFFFFF",
@@ -453,26 +453,26 @@ export interface ContactConfig {
 }
 
 export const contactConfig: ContactConfig = {
-  heading: "Get in Touch",
-  description: "Our fragrance concierge is available to assist you with personalized recommendations, gift services, and any inquiries about our collection.",
+  heading: "Contactez-Nous",
+  description: "Notre concierge parfumerie est disponible pour vous aider avec des recommandations personnalisées, des services cadeaux et toute question concernant notre collection.",
   locationLabel: "Boutique",
   location: "Place de la Parfumerie, 06130 Grasse, France",
   emailLabel: "Email",
   email: "concierge@alaaparfumes.com",
-  phoneLabel: "Phone",
+  phoneLabel: "Téléphone",
   phone: "+33 4 93 00 00 00",
   formFields: {
-    nameLabel: "Name",
-    namePlaceholder: "Your full name",
+    nameLabel: "Nom",
+    namePlaceholder: "Votre nom complet",
     emailLabel: "Email",
-    emailPlaceholder: "your@email.com",
+    emailPlaceholder: "votre@email.com",
     messageLabel: "Message",
-    messagePlaceholder: "How may we assist you?",
+    messagePlaceholder: "Comment pouvons-nous vous aider ?",
   },
-  submitText: "Send Message",
-  submittingText: "Sending...",
-  submittedText: "Sent",
-  successMessage: "Thank you for reaching out. Our concierge will respond within 24 hours.",
+  submitText: "Envoyer le Message",
+  submittingText: "Envoi...",
+  submittedText: "Envoyé",
+  successMessage: "Merci de nous avoir contactés. Notre concierge répondra dans les 24 heures.",
   backgroundImage: "/images/contact-bg.jpg",
 };
 
@@ -510,49 +510,49 @@ export interface FooterConfig {
 }
 
 export const footerConfig: FooterConfig = {
-  brandName: "Alaa Luxury Parfumes",
+  brandName: "Alaa Parfums de Luxe",
   logoImage: "/images/logo.png",
-  brandDescription: "Exquisite extraits de parfum, crafted with passion and worn with distinction. Experience the art of luxury fragrance.",
-  newsletterHeading: "Join the Inner Circle",
-  newsletterDescription: "Subscribe to receive exclusive access to new releases, private events, and fragrance insights.",
-  newsletterPlaceholder: "Enter your email",
-  newsletterButtonText: "Subscribe",
-  newsletterSuccessText: "Welcome to the Alaa inner circle.",
+  brandDescription: "Des extraits de parfum exquis, créés avec passion et portés avec distinction. Expérimentez l'art du parfum de luxe.",
+  newsletterHeading: "Rejoignez le Cercle Intérieur",
+  newsletterDescription: "Abonnez-vous pour accéder exclusivement aux nouvelles sorties, aux événements privés et aux conseils parfumerie.",
+  newsletterPlaceholder: "Entrez votre email",
+  newsletterButtonText: "S'abonner",
+  newsletterSuccessText: "Bienvenue au cercle intérieur d'Alaa.",
   linkGroups: [
     {
       title: "Collections",
       links: [
         { label: "Oriental", href: "#products" },
         { label: "Floral", href: "#products" },
-        { label: "Woody", href: "#products" },
-        { label: "Fresh", href: "#products" },
+        { label: "Boisé", href: "#products" },
+        { label: "Frais", href: "#products" },
       ],
     },
     {
       title: "Services",
       links: [
-        { label: "Bespoke Fragrances", href: "#contact" },
-        { label: "Gift Concierge", href: "#contact" },
-        { label: "Engraving", href: "#contact" },
-        { label: "Corporate Gifting", href: "#contact" },
+        { label: "Parfums sur Mesure", href: "#contact" },
+        { label: "Concierge Cadeaux", href: "#contact" },
+        { label: "Gravure", href: "#contact" },
+        { label: "Cadeaux Entreprise", href: "#contact" },
       ],
     },
     {
-      title: "Company",
+      title: "Entreprise",
       links: [
-        { label: "Our Story", href: "#about" },
+        { label: "Notre Histoire", href: "#about" },
         { label: "Journal", href: "#blog" },
-        { label: "Careers", href: "#contact" },
-        { label: "Press", href: "#contact" },
+        { label: "Carrières", href: "#contact" },
+        { label: "Presse", href: "#contact" },
       ],
     },
   ],
   legalLinks: [
-    { label: "Privacy Policy", href: "#" },
-    { label: "Terms of Service", href: "#" },
-    { label: "Shipping & Returns", href: "#" },
+    { label: "Politique de Confidentialité", href: "#" },
+    { label: "Conditions d'Utilisation", href: "#" },
+    { label: "Livraison & Retours", href: "#" },
   ],
-  copyrightText: "© 2024 Alaa Luxury Parfumes. All rights reserved.",
+  copyrightText: "© 2024 Alaa Parfums de Luxe. Tous droits réservés.",
   socialLinks: [
     { icon: "Instagram", label: "Instagram", href: "https://instagram.com" },
     { icon: "Facebook", label: "Facebook", href: "https://facebook.com" },
