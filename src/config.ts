@@ -71,7 +71,7 @@ export interface HeroConfig {
 }
 
 export const heroConfig: HeroConfig = {
-  tagline: "EXTRAIT DE PARFUM",
+  tagline: "✦ COLLECTION EXCLUSIVE 2025 ✦",
   title: "L'Art du\nParfum de Luxe",
   ctaPrimaryText: "Explorer la Collection",
   ctaPrimaryTarget: "#products",

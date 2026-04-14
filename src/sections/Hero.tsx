@@ -22,6 +22,7 @@ const Hero = () => {
   const titleLines = heroConfig.title.split('\n');
 
   return (
+    <>
     <section
       id="hero"
       ref={heroRef}
@@ -36,15 +37,15 @@ const Hero = () => {
       />
 
       {/* Dark Overlay with gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70 hero-overlay" />
 
       {/* Gold accent line at top */}
       <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#C9A84C]/50 to-transparent" />
 
       {/* Content - Left Aligned Layout */}
-      <div className="relative z-10 h-full w-full flex items-center">
+      <div className="relative z-10 h-full w-full flex items-center hero-container">
         {/* Left side - Text content */}
-        <div className="w-full lg:w-1/2 h-full flex flex-col items-start justify-center px-6 md:px-12 lg:px-16">
+        <div className="w-full lg:w-1/2 h-full flex flex-col items-start justify-center px-6 md:px-12 lg:px-16 hero-text">
           {/* Content wrapper */}
           <div className="relative z-10 max-w-2xl w-full">
             {/* Tagline */}
@@ -64,9 +65,9 @@ const Hero = () => {
 
             {/* Title */}
             <h1
-              className={`font-serif text-5xl md:text-6xl lg:text-7xl leading-tight transition-all duration-1000 mb-8 text-white ${
+              className={`font-serif text-5xl md:text-6xl lg:text-7xl leading-tight transition-all duration-1000 mb-4 text-white ${
                 isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
-              }`}
+              } hero-title`}
               style={{ transitionDelay: '400ms' }}
             >
               {titleLines.map((line, i) => (
@@ -77,20 +78,30 @@ const Hero = () => {
               ))}
             </h1>
 
+            {/* Subtitle */}
+            <p
+              className={`text-sm md:text-base font-light italic text-white/90 mb-8 transition-all duration-1000 ${
+                isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
+              } hero-subtitle`}
+              style={{ transitionDelay: '1000ms' }}
+            >
+              Chaque goutte raconte une histoire d'élégance et de raffinement
+            </p>
+
             {/* Decorative line */}
             <div
               className={`w-16 h-[2px] bg-gradient-to-r from-[#C9A84C] to-transparent mb-8 transition-all duration-1000 ${
                 isVisible ? 'opacity-100 scale-x-100' : 'opacity-0 scale-x-0'
               }`}
-              style={{ transitionDelay: '500ms', transformOrigin: 'left' }}
+              style={{ transitionDelay: '1100ms', transformOrigin: 'left' }}
             />
 
             {/* CTA Buttons */}
             <div
               className={`flex flex-col sm:flex-row gap-4 transition-all duration-1000 ${
                 isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
-              }`}
-              style={{ transitionDelay: '600ms' }}
+              } hero-buttons`}
+              style={{ transitionDelay: '1200ms' }}
             >
               {heroConfig.ctaPrimaryText && (
                 <a
@@ -99,7 +110,7 @@ const Hero = () => {
                     e.preventDefault();
                     document.querySelector(heroConfig.ctaPrimaryTarget)?.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="group px-8 md:px-12 py-4 md:py-5 bg-[#C9A84C] text-black font-light tracking-wider text-sm uppercase relative overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-[#C9A84C]/40 hover:-translate-y-1"
+                  className="group min-w-[240px] w-full px-8 py-4 bg-[#C9A84C] text-black font-light tracking-wider text-sm uppercase relative overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-[#C9A84C]/40 hover:-translate-y-1 whitespace-nowrap"
                 >
                   <span className="relative z-10">{heroConfig.ctaPrimaryText}</span>
                   <div className="absolute inset-0 bg-white/20 -translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
@@ -112,7 +123,7 @@ const Hero = () => {
                     e.preventDefault();
                     document.querySelector(heroConfig.ctaSecondaryTarget)?.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="group px-8 md:px-12 py-4 md:py-5 border-2 border-[#C9A84C] text-[#C9A84C] font-light tracking-wider text-sm uppercase relative overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-[#C9A84C]/30 hover:-translate-y-1"
+                  className="group min-w-[240px] w-full px-8 py-4 border-2 border-[#C9A84C] text-[#C9A84C] font-light tracking-wider text-sm uppercase relative overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-[#C9A84C]/30 hover:-translate-y-1 whitespace-nowrap"
                 >
                   <span className="relative z-10">{heroConfig.ctaSecondaryText}</span>
                   <div className="absolute inset-0 bg-[#C9A84C] -translate-y-full group-hover:translate-y-0 transition-transform duration-300 z-0" />
@@ -122,9 +133,19 @@ const Hero = () => {
                 </a>
               )}
             </div>
-          </div>
-        </div>
 
+            {/* Stats Bar */}
+            <div
+              className={`mt-8 text-center transition-all duration-1000 hero-stats ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+              }`}
+              style={{ transitionDelay: '1300ms' }}
+            >
+              <p className="text-sm font-light uppercase tracking-wider text-[#C9A84C]">
+                ✦ 100% Pure &nbsp;|&nbsp; Fait Main &nbsp;|&nbsp; Livraison Maroc ✦
+              </p>
+            </div>
+          </div>          </div>
         {/* Right side - Empty space for visual balance */}
         <div className="hidden lg:block w-1/2 h-full" />
       </div>
@@ -143,6 +164,48 @@ const Hero = () => {
       {/* Bottom gold accent line */}
       <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#C9A84C]/30 to-transparent" />
     </section>
+
+    <style>{`
+      @media (max-width: 768px) {
+        .hero-container {
+          flex-direction: column;
+          min-height: 100svh;
+          padding: 140px 24px 60px;
+          text-align: center;
+          align-items: center;
+        }
+        .hero-text {
+          text-align: center;
+          align-items: center;
+        }
+        .hero-title {
+          font-size: clamp(2rem, 9vw, 2.8rem);
+        }
+        .hero-subtitle {
+          text-decoration: none;
+          background: none;
+          -webkit-text-fill-color: white;
+        }
+        .hero-buttons {
+          flex-direction: column;
+          width: 100%;
+          max-width: 300px;
+          margin: 0 auto;
+        }
+        .hero-stats {
+          white-space: normal;
+          text-align: center;
+        }
+        .parallax-bg {
+          background-size: cover;
+          background-position: center center;
+        }
+        .hero-overlay {
+          background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.85) 100%);
+        }
+      }
+    `}</style>
+    </>
   );
 };
 

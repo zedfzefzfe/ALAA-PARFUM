@@ -50,9 +50,9 @@ const Navigation = ({ cartItems, onRemoveFromCart, onUpdateQuantity }: Navigatio
   };
 
   return (
-    <>
+    <div>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 nav-mobile ${
           isScrolled ? 'bg-[#0a0a0a]/95 backdrop-blur-sm shadow-lg shadow-black/20' : 'bg-transparent'
         }`}
       >
@@ -63,14 +63,14 @@ const Navigation = ({ cartItems, onRemoveFromCart, onUpdateQuantity }: Navigatio
               e.preventDefault();
               scrollToSection('#hero');
             }}
-            className="gold-glow-hover inline-flex items-center h-full"
+            className="gold-glow-hover inline-flex items-center h-full nav-logo"
             aria-label={navigationConfig.brandName}
           >
             {navigationConfig.logoImage ? (
               <img
                 src={navigationConfig.logoImage}
                 alt={navigationConfig.brandName}
-                className="block h-[1200px] md:h-[1300px] w-auto max-w-[320px] object-contain"
+                className="block h-[34120px] md:h-[350px] w-auto max-w-[320px] object-contain"
               />
             ) : (
               <span
@@ -82,7 +82,7 @@ const Navigation = ({ cartItems, onRemoveFromCart, onUpdateQuantity }: Navigatio
             )}
           </a>
 
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-6 nav-icons">
             <button
               onClick={() => setIsCartOpen(true)}
               className="relative btn-hover"
@@ -296,7 +296,47 @@ const Navigation = ({ cartItems, onRemoveFromCart, onUpdateQuantity }: Navigatio
           </div>
         </div>
       </div>
-    </>
+
+    <style>{`
+      @media (max-width: 768px) {
+        .nav-mobile {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: 999;
+          background:Transparent;
+          height: 150px;
+          padding: 0 20px;
+        }
+        .nav-logo {
+          position: absolute;
+          left: 20px;
+          top: 50%;
+          transform: translateY(-50%);
+          height: 150px !important;
+          display: flex !important;
+          align-items: center !important;
+        }
+        .nav-logo img {
+          height: auto !important;
+          max-height: 150px !important;
+          width: auto !important;
+        }
+        .nav-logo span {
+          font-size: 14px !important;
+        }
+        .nav-icons {
+          position: absolute;
+          right: 20px;
+          top: 50%;
+          transform: translateY(-50%);
+          display: flex !important;
+          gap: 16px;
+        }
+      }
+    `}</style>
+    </div>
   );
 };
 
